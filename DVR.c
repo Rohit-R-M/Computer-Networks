@@ -61,8 +61,9 @@ int main()
     printf("Enter destination node (1 to %d): ", nodes);
     scanf("%d", &destination);
 
-    source--;      // convert to 0-based index
-    destination--; // convert to 0-based index
+    //convert to 0-based index
+    source--; 
+    destination--;
 
     printf("\nShortest path from node %d to node %d is: ", source + 1, destination + 1);
     if (dist[source][destination] == INT_MAX)
@@ -72,6 +73,7 @@ int main()
 
     return 0;
 }
+
 /*
 0 1 5
 1 0 2
